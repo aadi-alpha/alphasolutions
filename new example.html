@@ -1,0 +1,156 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Popup Enquiry Form</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9f9;
+    }
+
+    /* Button */
+    .btn-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 39px;
+    }
+
+    .enquiry-btn {
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+      color: #092e55;
+      background-color: #fcb900;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin-bottom: 40px;
+      transition: transform 0.3s ease;
+    }
+
+    .enquiry-btn:hover {
+      transform: scale(1.05);
+    }
+
+    /* Overlay background */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    /* Form container */
+    .enquiry-form {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+      transform: scale(0);
+      animation: none;
+    }
+
+    .enquiry-form h3 {
+      text-align: center;
+      color: #092e55;
+      margin-bottom: 20px;
+    }
+
+    .enquiry-form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .enquiry-form button {
+      width: 100%;
+      padding: 10px;
+      background: #092e55;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* Animations */
+    @keyframes zoomIn {
+      from { transform: scale(0); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes zoomOut {
+      from { transform: scale(1); opacity: 1; }
+      to { transform: scale(0); opacity: 0; }
+    }
+
+    .show {
+      display: flex;
+    }
+
+    .zoom-in {
+      animation: zoomIn 0.4s forwards;
+    }
+
+    .zoom-out {
+      animation: zoomOut 0.4s forwards;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Button -->
+  <!-- <div class="btn-container">
+    <button class="enquiry-btn" onclick="openForm()">Send Enquiry Now</button>
+  </div>
+
+  <!-- Popup Form -->
+  <!-- <div class="overlay" id="popup">
+    <div class="enquiry-form" id="formCard">
+      <h3>Send Enquiry</h3>
+      <input type="text" placeholder="Your Name" />
+      <input type="tel" placeholder="Phone Number" />
+      <input type="text" placeholder="Pin Code" />
+      <button onclick="submitForm()">Submit</button>
+    </div>
+  </div> --> -->
+
+  <!-- Script -->
+  <!-- <script>
+    const popup = document.getElementById('popup');
+    const formCard = document.getElementById('formCard');
+
+    function openForm() {
+      popup.classList.add('show');
+      formCard.classList.remove('zoom-out');
+      formCard.classList.add('zoom-in');
+    }
+
+    function submitForm() {
+      formCard.classList.remove('zoom-in');
+      formCard.classList.add('zoom-out');
+
+      setTimeout(() => {
+        popup.classList.remove('show');
+      }, 400); // match with animation duration
+    }
+  </script>
+
+</body>
+</html> 
+ -->
