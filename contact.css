@@ -154,6 +154,7 @@ margin-bottom: clamp(60px,8vw,100px);
       
          flex-direction: column;
       max-width: 700px;
+      width: 100%;
       background: #f7f7f7;
       padding: 2rem;
       border-radius: 10px;
