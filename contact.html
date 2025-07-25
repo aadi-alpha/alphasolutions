@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Math&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <p class="bac-btn"><a href="index.html"><i class="fa-solid fa-angles-left"></i>&nbsp;Back</a></p>
+        <p class="logo">Maccem Solutions</p>
+
+
+    </nav>
+    <section class="heading-contact fade-in">
+        <h2 class="fade-in">Contact Us</h2>
+        <p class="fade-in">We'd love to hear from you. Reach out to us through the form or our contact details below.</p>
+    </section>
+    <!-- nav complete -->
+    <div class="container-both-sec-contact fade-in">
+        <section class="booking-contact fade-in">
+
+            <h2 class="fade-in">Send Us a Message</h2>
+            <form class="fade-in">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Your Name" required />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your Email" />
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Your Phone Number" required maxlength="10" />
+
+
+                <label for="city-select-form">Select Your City</label>
+                <select name="city" id="city-select-form" required>
+                    <option value="select-area">Select your city</option>
+                    <option value="Ambala">Ambala</option>
+                    <option value="Yamunanagar">Yamunanagar</option>
+                    <option value="Jagadhri">Jagadhri</option>
+                    <option value="Himachal">Himachal</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Delhi">Delhi</option>
+                </select>
+                <label for="select-service">Select service</label>
+                <select name="service" id="select-service" required>
+                    <option value="select-service-cont">Select service for enquiry</option>
+                    <option value="waterproo">Waterproofing</option>
+                    <option value="termite-cont">Termite Control</option>
+                    <option value="const-consul">Construction & Consultancy</option>
+                    <option value="greennet-tar">Greennet & Tarpaulin sheets</option>
+                    <option value="tiles-leak">Tiles Leakage</option>
+
+                </select>
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+                <p class="note-contact">Note: <br>If you want to leave a message, you can write it in the message box.
+                    <br>
+                    If you can't find your city in the list, you can also write your city name or full address in the
+                    message box. <br>
+                    We provide services in many cities and their nearby areas.</p>
+                <br>
+                <button type="submit">Send Message</button>
+            </form>
+            <script src="form-booking.js"></script>
+
+        </section>
+        <section class="contact-info fade-in">
+            <h2>Our Contact Info</h2>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> 123 Civil Street, Delhi, India</li>
+                <li><i class="fas fa-phone-alt"></i> +91 98765 43210</li>
+                <li><i class="fas fa-envelope"></i> contact@maccemsolutions.com</li>
+                <li><i class="fab fa-whatsapp"></i> +91 98765 43210</li>
+                <li><i class="fab fa-facebook"></i> facebook.com/maccemsolutions</li>
+                <li><i class="fab fa-instagram"></i> instagram.com/maccemsolutions</li>
+                <li><i class="fab fa-linkedin"></i> linkedin.com/company/maccemsolutions</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column-left">
+                <h3>Maccem Solutions</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, accusantium fugiat, laboriosam fugit
+                    voluptate minima deserunt vero, tempore facilis omnis libero repellat temporibus mollitia corrupti
+                    perferendis commodi sed vitae unde.
+                </p>
+                <div class="footer-left-icons">
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-x-twitter"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+
+            </div>
+            <div class="footer-column-list">
+                <div class="footerList">
+                    <h4>COMPANY</h4>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="index.html#servNav">Services</a></li>
+                        <li><a href="index.html#galleryNav">Work gallery</a></li>
+                        <li><a href="index.html#reviewsTest">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footerList">
+                    <h4>USEFUL LINKS</h4>
+                    <ul>
+                        <li class="second-list"><a href="">Terms and conditions</a></li>
+                        <li class="second-list"><a href="">Privacy Policy</a></li>
+                        <li class="second-list"><a href="">Comparison</a></li>
+                        <li class="second-list"><a href="">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-column-right">
+                <h4>Contact</h4>
+                <p><i class="fa-solid fa-envelope" style="color: #092e55;"></i> support@markspac.com</p>
+                <p>Made with <span style="color: red;">❤</span> at our facility in North India.</p>
+            </div>
+        </div>
+        </div>
+        <div class="footer-end">
+            <div class="buttons-footer">
+
+                <button class="footer-btn"> <a href="contact.html">Contact Us</a></button>
+            </div>
+            <p class="footer-copy">© 2025 Markspac, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="wats-ico">
+        <p>👇</p>
+        <a href="https://wa.me/919354912492" target="_blank">
+            <i class="fa-brands fa-square-whatsapp"></i>
+        </a>
+    </div>
+      <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.05 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>
