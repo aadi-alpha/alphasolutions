@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Construction Consultancy | Alpha Solutions</title>
+  <meta name="description"
+    content="Alpha Solutions provides expert construction consultancy for residential and commercial projects — from planning to supervision." />
+  <meta name="keywords" content="Construction Consultancy, Building Consultation, Project Planning, Alpha Solutions" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    nav {
+      height: 60px;
+      width: 100vw;
+      top: 0;
+      z-index: 999999;
+      background-color: white;
+      padding-left: 4vw;
+      padding-right: 4vw;
+      position: fixed;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .bac-btn a {
+      text-decoration: none;
+      color: rgb(11, 74, 74);
+
+    }
+
+    .bac-btn {
+      font-weight: 600;
+      font-size: clamp(16px, 2vw, 18px);
+    }
+
+    .logo {
+      font-size: clamp(18px, 2vw, 24px);
+      font-weight: 700;
+      color: rgb(11, 74, 74);
+      margin-right: 6vw;
+      text-align: right;
+    }
+
+    header {
+      background-color: rgb(11, 74, 74);
+      color: #fff;
+      padding: 30px;
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    h2 {
+      color: rgb(11, 74, 74);
+    }
+    header h1{
+      font-size: clamp(30px,5vw,60px);
+      line-height: clamp(35px,6vw,70px);
+      margin-bottom: 0;
+    }
+
+    .section {
+      padding: 40px 10px;
+      display: block;
+      margin-bottom: 30px;
+      max-width: 88vw !important;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #fff;
+    }
+
+    .section:nth-child(even) {
+      background-color: #e0f2f1;
+    }
+
+    .section img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .section h2 {
+      font-size: clamp(18px, 2vw, 24px);
+      line-height: clamp(30px, 3vw, 36px);
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: clamp(14px, 2vw, 16px);
+      line-height: clamp(20px, 3vw, 30px);
+    }
+
+    .footer {
+
+      padding: 60px 20px 30px;
+      color: rgb(162, 162, 162);
+      font-size: 14px;
+      background-color: white;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      overflow-x: hidden;
+
+      gap: 40px;
+    }
+
+    .footer-column h3,
+    .footer-column h4 {
+      margin-bottom: 10px;
+      color: rgb(11, 74, 74);
+    }
+
+    .footer-column-left {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 18vw;
+      margin-left: 4vw;
+      margin-right: 4vw;
+      color: rgb(11, 74, 74);
+    }
+
+    .footer-left-icons {
+      display: flex;
+      gap: 20px;
+      width: 10vw;
+      font-size: 24px;
+
+
+    }
+
+    .footer-left-icons a {
+      text-decoration: none;
+      color: rgb(11, 74, 74);
+    }
+
+    .footer-column-left p {
+      line-height: 20px;
+      color: black;
+
+    }
+
+    .footer-column-list {
+      display: flex;
+      justify-content: center;
+      width: 35vw;
+      gap: 150px;
+    }
+
+    .footerList h4 {
+      margin-bottom: 20px;
+      font-size: 13px;
+      color: black;
+      font-weight: 700;
+      letter-spacing: 1.5PX;
+    }
+
+
+    .footerList li {
+      margin-top: 10px;
+      list-style: none;
+      color: black;
+      font-size: 14px;
+      font-weight: 500;
+
+    }
+
+    .footerList li a {
+      color: rgb(11, 74, 74);
+    }
+
+    .second-list {
+      margin-left: 20px;
+    }
+
+    .footer-column-right {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      color: black;
+      margin-right: 4vw;
+    }
+
+    .footer-column-right h4 {
+
+      font-size: 15px;
+      color: rgb(11, 74, 74);
+      font-weight: 700;
+      letter-spacing: 1.5PX;
+
+    }
+
+    .footer-end {
+      border-top: 2px solid rgba(163, 156, 156, 0.53);
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      justify-content: space-between;
+      height: 100px;
+      align-items: center;
+
+
+      margin-top: 100px;
+    }
+
+    .buttons-footer {
+      display: flex;
+      flex-direction: row;
+      width: 40vw;
+
+
+    }
+
+    .footer-btn {
+      background-color: rgb(11, 74, 74);
+      border: 1px solid rgb(11, 74, 74);
+      color: white;
+      width: 100%;
+      max-width: 165px;
+      height: 50px;
+      font-size: clamp(10px, 2vw, 18px);
+      margin-left: 3vw;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .footer-btn a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .social-icons i {
+      margin-right: 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .footer-copy {
+      width: 50vw;
+      margin-right: 4vw;
+      display: flex;
+      justify-content: flex-end;
+      color: black;
+    }
+
+    @media(max-width:1100px) {
+      .footer-column-list {
+        gap: 80px;
+      }
+
+      .footer-column-right {
+        margin-left: 4vw;
+      }
+    }
+
+    @media(max-width:780px) {
+      .footer-end {
+        flex-direction: column;
+      }
+
+      .buttons-footer {
+        width: 100vw;
+        justify-content: center;
+        margin-top: 30px;
+      }
+
+      .footer-copy {
+        width: 100vw;
+        justify-content: center;
+      }
+
+      .footer-column-list {
+        gap: 80px;
+      }
+
+      .footer-left-icons {
+        font-size: 20px;
+      }
+
+      .footer-column-left {
+        width: 20vw;
+      }
+
+      .footer-column-list {
+        width: 35vw;
+        justify-content: flex-start;
+        margin-left: 15vw;
+        margin-left: 4vw;
+        margin-right: 4vw;
+      }
+
+      .footer-container {
+        justify-content: flex-start;
+      }
+    }
+
+    @media(max-width:500px) {
+      .footer-column-left {
+        width: 90vw;
+
+
+      }
+
+      .footer-left-icons {
+        font-size: 16px;
+      }
+
+      .footer-left-icons {
+        width: 90vw;
+        display: flex;
+
+      }
+
+      .footer-column-list {
+        width: 100vw;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-left: 4vw;
+        margin-right: 4vw;
+
+        align-items: center;
+
+
+      }
+
+      .second-list {
+        margin-left: 0px;
+      }
+
+      .footer-container {
+        justify-content: flex-start;
+      }
+
+      .footer-column-right {
+        width: 100vw;
+        margin-left: 4vw;
+        margin-right: 4vw;
+
+      }
+
+      .footer-buttons {
+        width: 90vw;
+      }
+
+      .footer-btn {
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        max-width: 140px;
+        height: 50px;
+        font-size: 15px;
+      }
+    }
+
+    @media(max-width:330px) {
+      .footer-column-list {
+        margin-left: 0;
+      }
+
+    }
+
+    @media(max-width:330px) {
+      .footer-column-list {
+        margin-left: 0;
+        width: 90vw;
+        margin-left: 4vw;
+
+      }
+
+
+
+      .footer-btn {
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+
+        max-width: 140px;
+        height: 50px;
+        font-size: 12px;
+      }
+    }
+
+
+
+
+
+    /* ---end footer--- */
+
+
+
+
+    /* whatsapp-icon */
+    .wats-ico {
+      position: fixed;
+      top: auto;
+      bottom: 30px;
+      left: auto;
+      right: 6vw;
+      display: flex;
+      z-index: 99999;
+      flex-direction: column;
+
+
+
+    }
+
+    .wats-ico p {
+
+      position: absolute;
+      margin-left: 35%;
+
+      animation: up-down 1.5s linear infinite;
+    }
+
+    @keyframes up-down {
+      0% {
+        transform: translateY(-12px);
+      }
+
+      50% {
+        transform: translateY(-30px);
+      }
+
+      100% {
+        transform: translateY(-12px);
+      }
+    }
+
+    .wats-ico a {
+      text-decoration: none;
+      font-size: 40px;
+
+    }
+
+    .fa-brands {
+      color: #25D366;
+
+
+    }
+
+
+
+    /* fade in */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .const-consul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 20px;
+    }
+
+    .const-consul img {
+      height: clamp(100px, 20vw, 200px);
+      width: clamp(150px, 20vw, 250px);
+    }
+
+    @media(max-width:354px) {
+      .const-consul img {
+        width: 88vw;
+        height: 150px;
+      }
+    }
+
+    h1 {
+      font-size: clamp(30px, 8vw, 60px);
+    }
+
+    h2 {
+      font-size: clamp(20px, 5vw, 36px);
+    }
+
+    .footer-left-icons a {
+      text-decoration: none;
+      color: rgb(11, 74, 74);
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <p class="bac-btn"><a href="index.html#servNav"><i class="fa-solid fa-angles-left"></i>&nbsp;Back</a></p>
+    <p class="logo"><span style="color: orange;">Alpha</span> Solutions</p>
+  </nav>
+  <header class="fade-in">
+    <h1 class="fade-in">Construction Consultancy</h1>
+    <p class="fade-in">From Vision to Reality: Complete Planning & Expert Supervision by Alpha Construction Consultants
+
+</p>
+
+  </header>
+
+  <div class="section fade-in">
+    <h2 class="fade-in">Project Planning</h2>
+    <p class="fade-in">We begin by understanding your vision, functional needs, and long-term goals for the structure.
+      Whether you're building a home, villa, or commercial space, our team collaborates closely with you to create a
+      clear roadmap. We assist in drafting detailed blueprints, recommending suitable construction methods, and
+      selecting materials that balance quality with cost-effectiveness. Every design is tailored with structural safety,
+      sustainability, and future scalability in mind. From the foundation to finishing touches, we provide expert
+      guidance at every step — helping you turn ideas into reliable, well-planned realities.</p>
+    <div class="const-consul">
+      <img src="images-services/building-concrete-house.jpg" alt="construction consultancy work">
+      <img src="images-services/building-concrete-house.jpg" alt="construction consultancy work">
+      <img src="images-services/building-concrete-house.jpg" alt="construction consultancy work">
+      <img src="images-services/building-concrete-house.jpg" alt="construction consultancy work">
+    </div>
+  </div>
+
+  <div class="section fade-in">
+    <h2 class="fade-in">Material Consultation</h2>
+    <p class="fade-in">Confused about cement types, waterproofing solutions, or eco-friendly construction materials?
+      Don’t worry — our team of experts is here to guide you at every step. We carefully analyze your structure’s
+      design, intended use, soil conditions, and local climate before recommending the most suitable materials. Whether
+      you’re choosing between OPC, PPC, or specialized cement, or trying to figure out the right waterproofing method —
+      be it crystalline, membrane-based, or chemical coatings — we offer tailored suggestions that balance durability,
+      performance, and cost-effectiveness. For clients interested in sustainable building practices, we also promote
+      eco-friendly alternatives that reduce environmental impact without compromising on strength or longevity. Our goal
+      is to help you build structures that are not just strong and long-lasting, but also budget-conscious and
+      future-ready.</p>
+
+  </div>
+
+  <div class="section fade-in">
+    <h2 class="fade-in">On-Site Supervision</h2>
+    <p class="fade-in">We ensure that on-site execution strictly follows the approved structural and architectural
+      plans. Our experienced consultants remain actively involved throughout the entire construction process — starting
+      from excavation and foundation laying to the final finishing touches. At every critical stage, we conduct regular
+      site inspections to verify compliance with design specifications, safety norms, and material standards. We closely
+      monitor the work of contractors, masons, and labor teams, offering guidance wherever necessary to correct
+      deviations or improve workmanship. Our experts also coordinate with engineers and suppliers to ensure timely
+      availability of quality materials and to prevent delays. Whether it’s proper curing of concrete, accurate
+      reinforcement placement, or precision in tile installation and plastering, we focus on delivering a structure that
+      is durable, safe, and finished to the highest quality standards. Our goal is to maintain complete transparency and
+      ensure you get the full value of your investment with peace of mind.</p>
+
+  </div>
+
+  <div class="section fade-in">
+    <h2 class="fade-in">Client-Centric Approach</h2>
+    <p class="fade-in">Every client has unique requirements, challenges, and expectations — and we treat them with the
+      personalized attention they deserve. To ensure a seamless and well-coordinated experience, we assign a dedicated
+      construction consultant who acts as your single point of contact throughout the entire project duration. From the
+      very first consultation to the final handover, your assigned consultant remains in regular communication with you,
+      updating you on project milestones, approvals, material choices, and any on-site developments. This transparent,
+      one-on-one approach eliminates confusion, speeds up decision-making, and allows you to stay in control without
+      being overwhelmed by technicalities. Whether it’s resolving site issues, adapting to design changes, or managing
+      contractor coordination, your consultant ensures that your vision is executed precisely while maintaining
+      timelines, quality standards, and cost efficiency. Our client-first strategy guarantees that your voice is always
+      heard and your project is always prioritized..</p>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column-left">
+        <h3>Alpha Solutions</h3>
+        <p>Alpha Solutions specializes in advanced waterproofing services for rooftops, basements, walls, tanks,
+          bathrooms, cracks, and lift pits. We ensure long-lasting protection using proven methods.
+        </p>
+        </p>
+        <div class="footer-left-icons">
+          <a href="https://www.linkedin.com/in/aadi-nagpal-7a635333a"> <i class="fab fa-linkedin-in"></i></a>
+          <a href=""> <i style="color: rgb(11, 74, 74); "  class="fa-brands fa-youtube" onclick="ytalert()"></i></a>
+          <script>
+            function ytalert() {
+              alert("Youtube not available")
+            }
+          </script>
+          <a href="https://www.facebook.com/share/1FTzB5Tys1/"> <i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/nagpal_aadi_/profilecard/?igsh=bDlqbmhvMWUydHFy"><i
+              class="fab fa-instagram"></i></a>
+        </div>
+
+      </div>
+      <div class="footer-column-list">
+        <div class="footerList">
+          <h4>COMPANY</h4>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="index.html#servNav">Services</a></li>
+            <li><a href="index.html#galleryNav">Work gallery</a></li>
+            <li><a href="index.html#reviewsTest">Testimonials</a></li>
+          </ul>
+        </div>
+
+        <div class="footerList">
+          <h4>USEFUL LINKS</h4>
+          <ul>
+            <li class="second-list"><a href="">Terms and conditions</a></li>
+            <li class="second-list"><a href="">Privacy Policy</a></li>
+            <li class="second-list"><a href="">Comparison</a></li>
+            <li class="second-list"><a href="">Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-column-right">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-envelope" style="color: rgb(11, 74, 74);"></i><a
+            style="color: rgb(11, 74, 74); text-decoration: none; font-weight: 550;" href="mailto:aadinagpal46@gmail.com">
+           aadinagpal46@gmail.com</a></p>
+        <p>Made with <span style="color: red;">❤</span> at our facility in North India.</p>
+      </div>
+    </div>
+    </div>
+    <div class="footer-end">
+      <div class="buttons-footer">
+
+        <button class="footer-btn"><a style="text-decoration: none;" href="contact.html">Contact Us</a></button>
+      </div>
+      <p class="footer-copy">© 2025 Alpha Solutions, Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="wats-ico">
+    <p>👇</p>
+    <a href="https://wa.me/919350912492" target="_blank">
+      <i class="fa-brands fa-square-whatsapp"></i>
+    </a>
+  </div>
+
+
+  </main>
+
+  <!-- JavaScript for fade-in animation -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.05 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+
+</html>
