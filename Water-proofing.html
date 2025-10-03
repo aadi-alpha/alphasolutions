@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterproofing Service | Alpha Solutions</title>
+    <meta name="description"
+        content="Professional waterproofing services for terraces, roofs, and basements by Alpha Solutions. Prevent water leaks and structural damage with our expert solutions.">
+    <meta name="keywords" content="Waterproofing, Terrace Waterproofing, Basement Waterproofing, Alpha Solutions">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        nav {
+            height: 60px;
+            width: 100vw;
+            top: 0;
+            z-index: 999999;
+            background-color: white;
+            padding-left: 4vw;
+            padding-right: 4vw;
+            position: fixed;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .bac-btn a {
+            text-decoration: none;
+            color: rgb(11, 74, 74);
+
+        }
+
+        .bac-btn {
+            font-weight: 600;
+            font-size: clamp(16px, 2vw, 18px);
+        }
+
+        .logo {
+            font-size: clamp(18px, 2vw, 24px);
+            font-weight: 700;
+            color: rgb(11, 74, 74);
+            margin-right: 6vw;
+            text-align: right;
+        }
+
+        header {
+            background-color: #003d33;
+            color: #fff;
+            padding: 20px;
+            margin-top: 60PX;
+            text-align: center;
+        }
+
+        header h1,
+        header p {
+            text-align: center;
+
+            margin: 10px;
+        }
+
+        h1 {
+            font-size: clamp(30px, 8vw, 60px);
+        }
+
+        h2 {
+            font-size: clamp(20px, 5vw, 36px);
+        }
+
+
+        .section-waterproofing {
+           padding: 10px;
+           padding-block: 20px;
+            background-color: #fff;
+            margin-bottom: 30px;
+            display: block;
+            max-width: 88vw;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            overflow-x: hidden;
+        }
+
+        .section-waterproofing:nth-child(even) {
+            background-color: #e0f2f1;
+        }
+
+        .section-waterproofing h2 {
+            color: #003d33;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .section-waterproofing p {
+            line-height: 1.6;
+            text-align: center;
+        }
+
+
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 88vw;
+            justify-content: center;
+            width: 88vw;
+            margin-left: auto;
+            margin-right: auto;
+            gap: clamp(20px, 2vw, 30px);
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background-color: #ffffff;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+
+            padding: 60px 20px 30px;
+            color: rgb(162, 162, 162);
+            font-size: 14px;
+            background-color: white;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            overflow-x: hidden;
+
+            gap: 40px;
+        }
+
+        .footer-column h3,
+        .footer-column h4 {
+            margin-bottom: 10px;
+            color: #003d33;
+        }
+
+        .footer-column-left {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 18vw;
+            margin-left: 4vw;
+            margin-right: 4vw;
+            color: #003d33;
+        }
+
+        .footer-left-icons {
+            display: flex;
+            gap: 20px;
+            width: 10vw;
+            font-size: 24px;
+            color: #003d33;
+
+        }
+
+        .footer-column-left p {
+            line-height: 20px;
+            color: black;
+
+        }
+
+        .footer-column-list {
+            display: flex;
+            justify-content: center;
+            width: 35vw;
+            gap: 150px;
+        }
+
+        .footerList h4 {
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: black;
+            font-weight: 700;
+            letter-spacing: 1.5PX;
+        }
+
+
+        .footerList li {
+            margin-top: 10px;
+            list-style: none;
+            color: black;
+            font-size: 14px;
+            font-weight: 500;
+
+        }
+
+        .footerList li a {
+            color: #003d33;
+        }
+
+        .second-list {
+            margin-left: 20px;
+        }
+
+        .footer-column-right {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            color: black;
+            margin-right: 4vw;
+        }
+
+        .footer-column-right h4 {
+
+            font-size: 15px;
+            color: #003d33;
+            font-weight: 700;
+            letter-spacing: 1.5PX;
+
+        }
+
+        .footer-end {
+            border-top: 2px solid rgba(163, 156, 156, 0.53);
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            justify-content: space-between;
+            height: 100px;
+            align-items: center;
+
+
+            margin-top: 100px;
+        }
+
+        .buttons-footer {
+            display: flex;
+            flex-direction: row;
+            width: 40vw;
+
+
+        }
+
+        .footer-btn {
+            background-color: #003d33;
+            border: 1px solid rgb(11, 74, 74);
+            color: white;
+            width: 100%;
+            max-width: 165px;
+            height: 50px;
+            font-size: clamp(10px, 2vw, 18px);
+            margin-left: 3vw;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .footer-btn a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .social-icons i {
+            margin-right: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .footer-left-icons a {
+            text-decoration: none;
+            color: rgb(11, 74, 74);
+        }
+
+        .footer-copy {
+            width: 50vw;
+            margin-right: 4vw;
+            display: flex;
+            justify-content: flex-end;
+            color: black;
+        }
+
+        @media(max-width:1100px) {
+            .footer-column-list {
+                gap: 80px;
+            }
+
+            .footer-column-right {
+                margin-left: 4vw;
+            }
+        }
+
+        @media(max-width:780px) {
+            .footer-end {
+                flex-direction: column;
+            }
+
+            .buttons-footer {
+                width: 100vw;
+                justify-content: center;
+                margin-top: 30px;
+            }
+
+            .footer-copy {
+                width: 100vw;
+                justify-content: center;
+            }
+
+            .footer-column-list {
+                gap: 80px;
+            }
+
+            .footer-left-icons {
+                font-size: 20px;
+            }
+
+            .footer-column-left {
+                width: 20vw;
+            }
+
+            .footer-column-list {
+                width: 35vw;
+                justify-content: flex-start;
+                margin-left: 15vw;
+                margin-left: 4vw;
+                margin-right: 4vw;
+            }
+
+            .footer-container {
+                justify-content: flex-start;
+            }
+        }
+
+        @media(max-width:500px) {
+            .footer-column-left {
+                width: 90vw;
+
+
+            }
+
+            .footer-left-icons {
+                font-size: 16px;
+            }
+
+            .footer-left-icons {
+                width: 90vw;
+                display: flex;
+
+            }
+
+            .footer-column-list {
+                width: 100vw;
+                flex-wrap: wrap;
+                gap: 40px;
+                margin-left: 4vw;
+                margin-right: 4vw;
+
+                align-items: center;
+
+
+            }
+
+            .second-list {
+                margin-left: 0px;
+            }
+
+            .footer-container {
+                justify-content: flex-start;
+            }
+
+            .footer-column-right {
+                width: 100vw;
+                margin-left: 4vw;
+                margin-right: 4vw;
+
+            }
+
+            .footer-buttons {
+                width: 90vw;
+            }
+
+            .footer-btn {
+                width: 90vw;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+                max-width: 140px;
+                height: 50px;
+                font-size: 15px;
+            }
+        }
+
+        @media(max-width:330px) {
+            .footer-column-list {
+                margin-left: 0;
+            }
+
+        }
+
+        @media(max-width:330px) {
+            .footer-column-list {
+                margin-left: 0;
+                width: 90vw;
+                margin-left: 4vw;
+
+            }
+
+
+
+            .footer-btn {
+                width: 90vw;
+                justify-content: center;
+                align-items: center;
+
+                max-width: 140px;
+                height: 50px;
+                font-size: 12px;
+            }
+        }
+
+
+
+
+
+        /* ---end footer--- */
+
+
+
+
+        /* whatsapp-icon */
+        .wats-ico {
+            position: fixed;
+            top: auto;
+            bottom: 30px;
+            left: auto;
+            right: 6vw;
+            display: flex;
+            z-index: 99999;
+            flex-direction: column;
+
+
+
+        }
+
+        .wats-ico p {
+
+            position: absolute;
+            margin-left: 35%;
+
+            animation: up-down 1.5s linear infinite;
+        }
+
+        @keyframes up-down {
+            0% {
+                transform: translateY(-12px);
+            }
+
+            50% {
+                transform: translateY(-30px);
+            }
+
+            100% {
+                transform: translateY(-12px);
+            }
+        }
+
+        .wats-ico a {
+            text-decoration: none;
+            font-size: 40px;
+
+        }
+
+        .fa-brands {
+            color: #25D366;
+
+
+        }
+
+
+
+        /* fade in */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .water-pr-wrk {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 20px;
+        }
+
+        .water-pr-wrk img {
+            height: clamp(100px, 20vw, 200px);
+            width: clamp(150px, 20vw, 250px);
+        }
+
+        @media(max-width:354px) {
+            .water-pr-wrk img {
+                width: 88vw;
+                height: 150px;
+            }
+        }
+        main{
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <p class="bac-btn"><a href="index.html#servNav"><i class="fa-solid fa-angles-left"></i>&nbsp;Back</a></p>
+        <p class="logo"><span style="color: orange;">Alpha</span> Solutions</p>
+    </nav>
+
+    <header class="fade-in">
+        <h1 class="fade-in">Alpha Solutions</h1>
+        <p class="fade-in">Specialists in Waterproofing Services</p>
+    </header>
+
+<main>
+
+    <div class="section-waterproofing fade-in">
+        <h2 class="fade-in">Why Waterproofing is Essential</h2>
+        <p class="fade-in"> Without proper waterproofing, your property becomes highly susceptible to mold growth, wall
+            dampness, internal leakage, and long-term structural damage that can compromise safety and aesthetics.
+            Whether it’s a residential home, office building, or industrial facility, our expert waterproofing services
+            offer comprehensive, long-lasting protection. We use cutting-edge technologies, tested sealants, and
+            climate-suitable solutions to prevent water ingress and ensure your space remains dry, healthy, and
+            structurally sound for years to come.
+        </p>
+        <div class="water-pr-wrk">
+            <img src="images-services/waterproofing.jpg" alt="Waterproofing Work">
+            <img src="images-services/waterproofing.jpg" alt="Waterproofing Work">
+            <img src="images-services/waterproofing.jpg" alt="Waterproofing Work">
+            <img src="images-services/waterproofing.jpg" alt="Waterproofing Work">
+        </div>
+    </div>
+
+    <div class="section-waterproofing fade-in">
+        <h2 class="fade-in">Our Waterproofing Services</h2>
+        <div class="features fade-in">
+            <div class="feature-card fade-in">
+                <h3>Terrace Waterproofing</h3>
+                <p>High-performance waterproof coatings and membranes specifically designed to protect your terrace
+                    slabs from water infiltration. These advanced solutions create a durable, seamless barrier that
+                    resists extreme weather, UV rays, and standing water — ensuring long-term protection for your
+                    building structure and interiors.
+                </p>
+            </div>
+            <div class="feature-card fade-in">
+                <h3>Bathroom Waterproofing</h3>
+                <p>Advanced sealants and chemical barriers that effectively stop water leakage from floors and walls —
+                    all without the need to remove or damage existing tiles. Our non-invasive technique ensures minimal
+                    disruption while providing long-lasting protection against seepage and moisture buildup.
+                    .</p>
+            </div>
+            <div class="feature-card fade-in">
+                <h3>Basement Waterproofing</h3>
+                <p>Effectively prevent dampness, cracks, and moisture buildup in basements and other underground areas
+                    using our advanced chemical injection techniques and high-grade waterproofing membranes. Our
+                    solutions are engineered to create a strong, water-resistant barrier that protects your structure
+                    from long-term damage.
+
+                </p>
+            </div>
+            <div class="feature-card fade-in">
+                <h3>Roof Waterproofing</h3>
+                <p>Our heat-reflective and waterproof coatings are specially formulated to safeguard your structures
+                    from extreme weather conditions — be it scorching sun, heavy rainfall, or humidity. These coatings
+                    not only prevent water penetration but also reflect solar heat, reducing indoor temperatures and
+                    enhancing energy efficiency.
+                </p>
+            </div>
+        </div>
+    </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer fade-in">
+        <div class="footer-container">
+            <div class="footer-column-left">
+                <h3>Alpha Solutions</h3>
+                <p>Alpha Solutions specializes in advanced waterproofing services for rooftops, basements, walls,
+                    tanks, bathrooms, cracks, and lift pits. We ensure long-lasting protection using proven methods.
+                </p>
+                </p>
+                <div class="footer-left-icons">
+                    <a href="https://www.linkedin.com/in/aadi-nagpal-7a635333a"> <i class="fab fa-linkedin-in"></i></a>
+            <a href=""> <i style="color: rgb(11, 74, 74); " class="fa-brands fa-youtube" onclick="ytalert()"></i></a>
+            <script>
+              function ytalert() {
+                alert("Youtube not available")
+              }
+            </script>
+            <a href="https://www.facebook.com/share/1FTzB5Tys1/"> <i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/nagpal_aadi_/profilecard/?igsh=bDlqbmhvMWUydHFy"><i
+                class="fab fa-instagram"></i></a>
+                </div>
+
+            </div>
+            <div class="footer-column-list">
+                <div class="footerList">
+                    <h4>COMPANY</h4>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="index.html#servNav">Services</a></li>
+                        <li><a href="index.html#galleryNav">Work gallery</a></li>
+                        <li><a href="index.html#reviewsTest">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footerList">
+                    <h4>USEFUL LINKS</h4>
+                    <ul>
+                        <li class="second-list"><a href="">Terms and conditions</a></li>
+                        <li class="second-list"><a href="">Privacy Policy</a></li>
+                        <li class="second-list"><a href="">Comparison</a></li>
+                        <li class="second-list"><a href="">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-column-right">
+                <h4>Contact</h4>
+                <p><i class="fa-solid fa-envelope" style="color: rgb(11, 74, 74);"></i><a
+                        style="color: rgb(11, 74, 74); text-decoration: none; font-weight: 550;"
+                        href="mailto:aadinagpal46@gmail.com"> aadinagpal46@gmail.com</a></p>
+                <p>Made with <span style="color: red;">❤</span> at our facility in North India.</p>
+            </div>
+        </div>
+        </div>
+        <div class="footer-end">
+            <div class="buttons-footer">
+
+              <button class="footer-btn"><a style="text-decoration: none;" href="contact.html">Contact Us</a></button>
+            </div>
+            <p class="footer-copy">© 2025 Alpha, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="wats-ico">
+        <p>👇</p>
+        <a href="https://wa.me/919354912492" target="_blank">
+            <i class="fa-brands fa-square-whatsapp"></i>
+        </a>
+    </div>
+
+
+    </main>
+
+    <!-- JavaScript for fade-in animation -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.05 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+
+</body>
+
+</html>
